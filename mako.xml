@@ -61,6 +61,7 @@
   <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9"  />
   <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9"  />
   <remove-project name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8"  />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8"  />
   <remove-project name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9"  />
   <remove-project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9"  />
   <remove-project name="platform/prebuilts/gdb/darwin-x86"  />
@@ -68,9 +69,11 @@
   <remove-project name="platform/prebuilts/ninja/darwin-x86"  />
   <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5"  />
 
-  <remove-project name="platform/hardware/qcom/audio" />
-  <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio"
-	  revision="refs/tags/android-6.0.1_r50" groups="qcom,qcom_audio" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm"
+      revision="refs/tags/android-6.0.1_r68" />
+
+  <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" groups="device,mako"
+      revision="refs/tags/android-6.0.1_r68" />
 
   <project path="device/lge/mako" name="ganadist/device_lge_mako" groups="device,mako"
 		remote="github" revision="nougat-mako-dev" />
